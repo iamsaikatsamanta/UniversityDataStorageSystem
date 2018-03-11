@@ -1,0 +1,25 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<DialogPane fx:controller="mainPackage.Info.LabAssistantInfoController"
+            xmlns:fx="http://javafx.com/fxml">
+    <content>
+        <GridPane hgap="10" vgap="10">
+            <Label text="Enter Employ ID" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <TextField fx:id="geteid" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+            <Button text="OK" GridPane.rowIndex="0" GridPane.columnIndex="2" onAction="#okpressed"/>
+            <Label text="Name" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+            <Label fx:id="getname" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+            <Label text="Address" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+            <Label fx:id="getaddr" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+            <Label text="Phone No" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+            <Label fx:id="getno" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+            <Label text="Employ Id" GridPane.rowIndex="6" GridPane.columnIndex="0"/>
+            <Label fx:id="getempid" GridPane.rowIndex="6" GridPane.columnIndex="1"/>
+            <Label text="Salary" GridPane.rowIndex="7" GridPane.columnIndex="0"/>
+            <Label fx:id="getsal" GridPane.rowIndex="7" GridPane.columnIndex="1"/>
+            <Label text="Lab Name" GridPane.rowIndex="8" GridPane.columnIndex="0"/>
+            <Label fx:id="getlabname" GridPane.rowIndex="8" GridPane.columnIndex="1"/>
+        </GridPane>
+    </content>
+</DialogPane>

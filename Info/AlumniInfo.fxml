@@ -1,0 +1,45 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.HBox?>
+<DialogPane fx:id="AlumniPain" fx:controller="mainPackage.Info.AlumniInfoController" xmlns:fx="http://javafx.com/fxml" prefWidth="1000" prefHeight="720">
+    <header>
+        <HBox>
+            <Button text="Update" onAction="#onupdate"/>
+            <Button text="Delete" onAction="#ondel"/>
+        </HBox>
+    </header>
+    <content>
+        <TableView fx:id="alumniTable" onKeyPressed="#keyPressed">
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+            </columnResizePolicy>
+            <columns>
+                <TableColumn text="Name" prefWidth="500">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="name"/>
+                    </cellValueFactory>
+                </TableColumn >
+                <TableColumn text="Address">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="Address"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Phone No">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="number"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Email">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="email"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Passing  Year">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="passingyear"/>
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+    </content>
+</DialogPane>

@@ -1,0 +1,21 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<DialogPane fx:controller="mainPackage.ADDDialoge.TeacherController"
+            xmlns:fx="http://javafx.com/fxml">
+    <content>
+        <GridPane hgap="10" vgap="10">
+            <Label text="Name" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <TextField fx:id="getname" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+            <Label text="Address" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <TextField fx:id="getaddr" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+            <Label text="Phone No" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <TextField fx:id="getno" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+            <Label text="Employ Id" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+            <TextField fx:id="getempid" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+            <Label text="Salary" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+            <TextField fx:id="getsal" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+            <Label text="Specalization" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+            <TextField fx:id="getspecal" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+        </GridPane>
+    </content>
+</DialogPane>

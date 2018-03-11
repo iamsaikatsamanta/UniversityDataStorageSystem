@@ -1,0 +1,14 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<DialogPane fx:controller="mainPackage.ADDDialoge.ResourceController"
+            xmlns:fx="http://javafx.com/fxml">
+    <content>
+        <GridPane hgap="10" vgap="10">
+            <Label text="Recorce Name" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <TextField fx:id="getname" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+            <Label text="Quantity" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <TextField fx:id="getquantity" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+        </GridPane>
+    </content>
+</DialogPane>
